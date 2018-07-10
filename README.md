@@ -1,7 +1,20 @@
 # seckill
 > 秒杀系列
 
- ## 环境搭建
+* * *
+ 
+ ## 环境搭建 
+ * win10的本机，最新版本的virtualBox(构建Ubuntu18.4的服务镜像)
+ 
+ * 服务系统环境 （A.ubuntu18.4;B.切换最新系统源；C.将虚拟机系统网络设置为桥接模式；D.将虚拟机与win10共享项目文件夹）
+ 
+ * 项目运行docker环境 （E.偏高版本；F.按需求构建各容器）
+ 
+ ### 参考list
+ * B: <https://blog.csdn.net/TotoroCyx/article/details/79517202>   <https://dev.aliyun.com/detail.html?spm=5176.1972343.2.12.13155aaaNGwviT&repoId=150843> 
+ * F： <http://laradock.io/documentation/>
+
+### 以下是关于 laradock 镜像文件的文档看完后的总结
 * http://laradock.io/documentation/ 这个laradock的docker镜像文件搭建环境还是挺好用的
 
 ### .   A.2）还没有PHP项目：
@@ -39,6 +52,9 @@ docker-compose exec workspace bash
 
 ###  您可以选择指定要重建的容器（而不是重建所有容器）：
 docker-compose build {container-name}
+
+###  停止容器：
+docker-compose stop {container-name
 
 ###  查看日志文件  
 >NGINX日志文件存储在logs/nginx目录中。
